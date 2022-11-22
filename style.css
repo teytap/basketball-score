@@ -1,11 +1,12 @@
 body {
   color: white;
-  margin: 100px;
+  margin: 60px;
+  background-color: #ddeae1;
 }
 
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bol;
+  font-weight: bold;
   font-size: 48px;
   line-height: 36px;
 }
@@ -24,15 +25,17 @@ h2 {
 .container {
   margin: 0 auto;
   width: 575px;
-  height: 385px;
+  height: 500px;
   background-color: #1b244a;
   padding: 20px;
+  border: 6px solid white;
+  border-radius: 20px;
 }
 
 .column {
   float: left;
   width: 40%;
-  padding: 10px;
+  padding: 10px 10px 80px 10px;
   height: 300px;
   margin-left: 36px;
 }
@@ -41,7 +44,10 @@ h2 {
   display: table;
   clear: both;
 }
-button {
+.row {
+  margin-bottom: 100px;
+}
+.btn {
   font-family: "Cursed Timer ULiL";
   border: 2px solid #9aabd8;
   background-color: #1b244a;
@@ -54,4 +60,27 @@ button {
 }
 button:hover {
   background-color: #2a3875;
+}
+.newGame {
+  background-color: #e94b6b;
+
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 43px;
+  width: 82%;
+  border: none;
+  transition: 100ms all ease-in-out;
+}
+#leader {
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e94b6b;
 }

@@ -9,26 +9,30 @@
   </head>
   <body>
     <div class="container">
+      <div id="leader"></div>
       <div class="row">
         <div class="column">
           <h1>HOME</h1>
           <h2 id="home-count">0</h2>
           <div>
-            <button class="function1" onClick="homeAdd1()">+1</button>
-            <button class="function2" onClick="homeAdd2()">+2</button>
-            <button class="function3" onClick="homeAdd3()">+3</button>
+            <button class="btn" onClick="homeAdd1()">+1</button>
+            <button class="btn" onClick="homeAdd2()">+2</button>
+            <button class="btn" onClick="homeAdd3()">+3</button>
           </div>
         </div>
+
         <div class="column">
           <h1>GUEST</h1>
           <h2 id="guest-count">0</h2>
           <div>
-            <button class="function1" onClick="guestAdd1()">+1</button>
-            <button class="function2" onClick="guestAdd3()">+2</button>
-            <button class="function3" onClick="guestAdd3()">+3</button>
+            <button class="btn" onClick="guestAdd1()">+1</button>
+            <button class="btn" onClick="guestAdd2()">+2</button>
+            <button class="btn" onClick="guestAdd3()">+3</button>
           </div>
         </div>
       </div>
+
+      <button class="newGame" onClick="newGame()">NEW GAME</button>
     </div>
     <script src="App.js"></script>
   </body>
