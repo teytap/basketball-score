@@ -11,8 +11,8 @@
     <div class="container">
       <div id="leader"></div>
       <div class="row">
-        <div class="column">
-          <h1>HOME</h1>
+        <div class="col">
+          <h1 id="home">HOME</h1>
           <h2 id="home-count">0</h2>
           <div>
             <button class="btn" onClick="homeAdd1()">+1</button>
@@ -20,9 +20,17 @@
             <button class="btn" onClick="homeAdd3()">+3</button>
           </div>
         </div>
+        <div class="col">
+          <div class="arrows">
+            <span id="leaderLeft"><< </span><span id="leaderRight"> >></span>
+          </div>
 
-        <div class="column">
-          <h1>GUEST</h1>
+          <div class="period">PERIOD</div>
+          <div class="period-count" id="period-count">0</div>
+          <button class="btn btn-period" onClick="periodNumber()">P</button>
+        </div>
+        <div class="col">
+          <h1 id="guest">GUEST</h1>
           <h2 id="guest-count">0</h2>
           <div>
             <button class="btn" onClick="guestAdd1()">+1</button>
