@@ -39,6 +39,7 @@ function newGame() {
   count = 0;
   homeCount.innerText = count;
   guestCount.innerText = score;
+  showleader();
 }
 function showleader() {
   if (count < score) {
@@ -51,5 +52,3 @@ function showleader() {
 
   return (leader.innerText = leaderTeam);
 }
-console.log(count);
-console.log(homeCount);
