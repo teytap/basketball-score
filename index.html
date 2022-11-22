@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>score-table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h1>HOME</h1>
+          <h2 id="home-count">0</h2>
+          <div>
+            <button class="function1" onClick="homeAdd1()">+1</button>
+            <button class="function2" onClick="homeAdd2()">+2</button>
+            <button class="function3" onClick="homeAdd3()">+3</button>
+          </div>
+        </div>
+        <div class="column">
+          <h1>GUEST</h1>
+          <h2 id="guest-count">0</h2>
+          <div>
+            <button class="function1" onClick="guestAdd1()">+1</button>
+            <button class="function2" onClick="guestAdd3()">+2</button>
+            <button class="function3" onClick="guestAdd3()">+3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="App.js"></script>
+  </body>
+</html>
