@@ -52,16 +52,16 @@ function newGame() {
   showleader();
 }
 function showleader() {
-  if (count < score) {
-    document.getElementById("leaderLeft").style.color = "#rgb(86, 85, 85)";
-    document.getElementById("leaderRight").style.color = "orange";
-    document.getElementById("guest").style.color = "orange";
-    document.getElementById("home").style.color = "white";
-  } else if (count > score) {
+  if (count > score) {
     document.getElementById("leaderLeft").style.color = "orange";
     document.getElementById("leaderRight").style.color = "rgb(86, 85, 85)";
     document.getElementById("guest").style.color = "white";
     document.getElementById("home").style.color = "orange";
+  } else if (count < score) {
+    document.getElementById("leaderLeft").style.color = "rgb(86, 85, 85)";
+    document.getElementById("leaderRight").style.color = "orange";
+    document.getElementById("guest").style.color = "orange";
+    document.getElementById("home").style.color = "white";
   } else {
     document.getElementById("leaderLeft").style.color = "rgb(86, 85, 85)";
     document.getElementById("leaderRight").style.color = "rgb(86, 85, 85)";
